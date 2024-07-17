@@ -6,7 +6,10 @@
 }
 
 .header{
-    background-color: aqua;
+    background-color: rgb(209, 204, 204);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav{
@@ -59,7 +62,8 @@
 }
 
 .menu--item:hover{
-    color: rgb(197, 197, 214);
+    color: rgb(165, 166, 240);
+    font-size: larger;
 }
 
 .menu.active{
@@ -73,4 +77,41 @@
     right: 0;
     margin-right: 15px;
     padding: 3px 3px;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom,rgb(154, 154, 236) ,red);
+    padding: 5px 5px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home--content{
+    width: fit-content;
+    background-color: white;
+
+    padding: 10px 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3rem;
+
+    border:4px double rgb(49, 48, 48);
+}
+
+.home--content p{
+    margin: 20px 20px;
+    padding: 4px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auto-type{
+    padding: 4px 4px;
+    font-size: 2rem;
+    color: rgb(49, 48, 48);
+    font-style: oblique;
 }
