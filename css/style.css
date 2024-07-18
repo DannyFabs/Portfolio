@@ -55,15 +55,27 @@
     padding-top: 50px;
 }
 
-.menu--item{
+
+.menu li{
     margin: 20px 20px;
     padding: 5px 5px;
     cursor: pointer;
 }
 
+.menu--item{
+    text-decoration: none;
+    color: inherit;
+}
+
+
 .menu--item:hover{
+    /* color: rgb(165, 166, 240); */
+    font-size: 3rem;
+}
+
+.menu--item.active{
     color: rgb(165, 166, 240);
-    font-size: larger;
+    font-size: 3rem;
 }
 
 .menu.active{
@@ -77,6 +89,7 @@
     right: 0;
     margin-right: 15px;
     padding: 3px 3px;
+    display: none;
 }
 
 .home{
@@ -114,4 +127,31 @@
     font-size: 2rem;
     color: rgb(49, 48, 48);
     font-style: oblique;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about img{
+    margin: 20px 20px;
+}
+
+.about--content {
+    width: 60%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.75rem;
+
+    padding: 5px 5px;
+    margin: 20px 20px;
+}
+
+.about--contact{
+    margin-top: 40px;
+}
+
+.about--contact p{
+    margin: 5px 5px;
 }
