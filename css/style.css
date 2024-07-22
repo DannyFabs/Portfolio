@@ -5,6 +5,14 @@
     box-sizing:border-box
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-snap-align: start;
+}
+
 .header{
     background-color: rgb(209, 204, 204);
     position: fixed;
@@ -134,7 +142,7 @@
 }
 
 .about img{
-    margin: 20px 20px;
+    /* margin: 20px 20px; */
 }
 
 .about--content {
@@ -143,8 +151,8 @@
     font-weight: 600;
     font-size: 1.75rem;
 
-    padding: 5px 5px;
-    margin: 20px 20px;
+    /* padding: 5px 5px;
+    margin: 20px 20px; */
 }
 
 .about--contact{
@@ -172,9 +180,17 @@
 
 .card{
     font-family: "Open Sans", sans-serif;
-    margin: 10px 10px;
-    padding: 25px 25px;
-    border: 3px solid;
+    margin: 47px 10px;
+    padding: 30px 30px;
+    border: 3px solid rgb(52, 52, 52);
+    transition: box-shadow 0.3s ease-in-out, margin-top 0.3s ease-in-out,margin-left 0.3s ease-in-out;
+
+}
+
+.card:hover{
+    margin-top: 30px;
+    margin-left: 7px;
+    box-shadow: 12px 12px rgb(52, 52, 52);;
 }
 
 .card--title{
