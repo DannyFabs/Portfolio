@@ -245,9 +245,10 @@ section {
 @media (max-width: 500px) {
 
     .about{
-        display: grid;
-        grid-template-rows: 1fr 2fr;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* grid-template-rows: 1fr 2fr;
+        width: 100%; */
     }
     .about--content {
       font-weight: 400; /* Smaller text on smaller screens */
