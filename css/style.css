@@ -150,21 +150,21 @@ section {
 }
 
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     .about--content {
       font-weight: 400; /* Smaller text on smaller screens */
-      font-size: 1.25em;
-    }
+      /* font-size: 1.25em; */
+    /* } */
 
-    .about--contact {
+    /* .about--contact {
         margin-top: 60px;
         font-size: 1rem;
     }
     
     .exp{
         grid-template-columns: 1fr;
-    }
-  }
+    } */
+  /* } */
 
 .about--content {
     width: 60%;
