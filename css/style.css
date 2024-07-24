@@ -101,7 +101,7 @@ section {
 }
 
 .home{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to bottom,#BFF098 ,#6FD6FF);
     padding: 5px 5px;
@@ -140,11 +140,31 @@ section {
 .about {
     display: flex;
     justify-content: space-between;
+
+    /* width: 100vw; */
+    height:100vh;
 }
 
 .about img{
     margin: 20px 20px;
 }
+
+
+@media (max-width: 500px) {
+    .about--content {
+      font-weight: 400; /* Smaller text on smaller screens */
+      font-size: 1.25em;
+    }
+
+    .about--contact {
+        margin-top: 60px;
+        font-size: 1rem;
+    }
+    
+    .exp{
+        grid-template-columns: 1fr;
+    }
+  }
 
 .about--content {
     width: 60%;
