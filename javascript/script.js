@@ -5,8 +5,29 @@ const offScreenMenu = document.querySelector('.menu');
 
 const pageLinks = document.querySelectorAll('.menu--item');
 
+const sectionHeaders = document.querySelectorAll('.aboutsection--header')
+
+
 const closeIcon = document.querySelector('.close')
 const close = document.getElementById("close")
+
+sectionHeaders.forEach(header => {
+    header.addEventListener('click', function(){
+        sectionHeaders.forEach(header=> header.classList.remove('active'))
+        this.classList.toggle('active')
+
+        const targetId = this.getAttribute('data-target')
+        const targetContent = document.getElementById(targetId)
+
+        document.querySelectorAll('.section--content').forEach(section=>{
+            section.classList.remove('active')
+        })
+        
+        if(targetContent){
+            targetContent.classList.add('active')
+        }
+    })
+})
 
 pageLinks.forEach(link => {
     link.addEventListener('click', function() {
