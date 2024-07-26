@@ -371,4 +371,9 @@ section {
     .exp{
         grid-template-columns: 1fr;
     }
+
+    .extra-curr{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+    }
  }
